@@ -1,6 +1,6 @@
 // https://github.com/hossain909/assignment_Three
 
-// #1. ==============  Convert Kilometer To Meter ==============//
+// #1. ==============  Kilometer To Meter ==============//
 function kilometerToMeter(km){
   let meter = 0;
   if(km <= 0){
