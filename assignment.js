@@ -26,7 +26,7 @@ function budgetCalculator(watch, phone, laptop){
 
 
 
-// #3. =============== Hotel Cost Function ==============//
+// #3. =============== Hotel Cost  ==============//
 function hotelCost(day){
   if(day <= 0){
     return "Please input a positive integer!";
@@ -48,7 +48,7 @@ function hotelCost(day){
 }
 
 
-// #4. ============== Hotel Cost Function ==============// 
+// #4. ============== Mega Friend ==============// 
 function megaFriend(arr){
   let largerName = [0];
   let empty = []
