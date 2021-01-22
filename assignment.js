@@ -4,13 +4,14 @@
 // #1. ==============  Kilometer To Meter ==============//
 function kilometerToMeter(kilometer){
   let meter;
-  if(isNaN(kilometer) || kilometer <= 0){
-    return "distance cannot be negative or zero";
+  if(kilometer <= 0){
+    return "Distance cannot be negative or zero";
   }else{
     meter = kilometer * 1000;
   }
   return meter;
 };
+console.log(kilometerToMeter(-1))
 
 
 // #2. ============== Budget Calculator ==============//  
@@ -54,12 +55,12 @@ function megaFriend(array){
   let largerName = [0];
   // check if array is empty
   if(array.length < 1) {
-    return "This is empty";
+    return "This array is empty";
   }else{
     for(let i = 0; i < array.length; i++){
       let element = array[i];
       if(element <= 0 || element > 0){
-        return "Please input an array with strings!"
+        return "Please input an array with string's!"
       }else{
         (element.length > largerName.length)
           largerName = element
