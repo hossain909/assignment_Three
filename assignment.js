@@ -28,7 +28,7 @@ function budgetCalculator(watch,phone,laptop){
 
 // #3. =============== Hotel Cost  ==============//
 function hotelCost(day){
-  if(isNaN(day) || day <= 0){
+  if(day <= 0){
     return "Please input a positive number!";
   }else if(day <= 10){
     totalCost = (day * 100)
@@ -67,4 +67,3 @@ function megaFriend(array){
   }
   return largerName;
 };
-console.log(megaFriend([1,2,2,2]))
