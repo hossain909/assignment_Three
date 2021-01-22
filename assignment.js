@@ -10,9 +10,7 @@ function kilometerToMeter(kilometer){
     meter = kilometer * 1000;
   }
   return meter;
-}
-let result = kilometerToMeter(5);
-console.log(result)
+};
 
 
 // #2. ============== Budget Calculator ==============//  
