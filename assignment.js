@@ -11,7 +11,6 @@ function kilometerToMeter(kilometer){
   }
   return meter;
 };
-console.log(kilometerToMeter(-1))
 
 
 // #2. ============== Budget Calculator ==============//  
