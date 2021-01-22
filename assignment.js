@@ -59,12 +59,12 @@ function megaFriend(array){
     for(let i = 0; i < array.length; i++){
       let element = array[i];
       if(element <= 0 || element > 0){
-        return "Please input an array with string's!"
-      }else{
-        (element.length > largerName.length)
+        return "Please input an array with string's"
+      }if (element.length > largerName.length){
           largerName = element
       }
     }
   }
   return largerName;
 };
+console.log(megaFriend([1,2,2,2]))
