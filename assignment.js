@@ -1,35 +1,37 @@
 // https://github.com/hossain909/assignment_Three
 
+
 // #1. ==============  Kilometer To Meter ==============//
-function kilometerToMeter(km){
-  let meter = 0;
-  if(km <= 0){
-    return "Please input a positive integer!";
+function kilometerToMeter(kilometer){
+  let meter;
+  if(isNaN(kilometer) || kilometer <= 0){
+    return "distance cannot be negative";
   }else{
-    meter = km * 1000;
+    meter = kilometer * 1000;
   }
   return meter;
 }
-
+let result = kilometerToMeter(5);
+console.log(result)
 
 
 // #2. ============== Budget Calculator ==============//  
-function budgetCalculator(watch, phone, laptop){
+function budgetCalculator(watch,phone,laptop){
   let total= 0;
   if((watch <= 0) || (phone <= 0) || (laptop <= 0)){
-    return "Please input a positive integer!";
+    return "Please input a positive number";
   }else{ 
     total += (watch * 50) + (phone * 100) + (laptop * 500);
   }
-  return total
-}
+  return total;
+};
 
 
 
 // #3. =============== Hotel Cost  ==============//
 function hotelCost(day){
-  if(day <= 0){
-    return "Please input a positive integer!";
+  if(isNaN(day) || day <= 0){
+    return "Please input a positive number!";
   }else if(day <= 10){
     totalCost = (day * 100)
   }else if(day <=20){
@@ -45,21 +47,26 @@ function hotelCost(day){
     totalCost = first_10_Days + second_10_Days + after_20_Days;
   }
   return totalCost;
-}
+};
+
 
 
 // #4. ============== Mega Friend ==============// 
-function megaFriend(arr){
+function megaFriend(array){
   let largerName = [0];
-  let empty = []
-  for(let i = 0; i < arr.length; i++){
-    let element = arr[i];
-    if(element <= 0 || element > 0){
-      return "Please input an array with strings!"
-    }if(element.length > largerName.length){
-      largerName = element;
+  // check if array is empty
+  if(array.length < 1) {
+    return "This is empty";
+  }else{
+    for(let i = 0; i < array.length; i++){
+      let element = array[i];
+      if(element <= 0 || element > 0){
+        return "Please input an array with strings!"
+      }else{
+        (element.length > largerName.length)
+          largerName = element
+      }
     }
   }
   return largerName;
-}
-
+};
