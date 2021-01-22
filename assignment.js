@@ -5,7 +5,7 @@
 function kilometerToMeter(kilometer){
   let meter;
   if(isNaN(kilometer) || kilometer <= 0){
-    return "distance cannot be negative";
+    return "distance cannot be negative or zero";
   }else{
     meter = kilometer * 1000;
   }
